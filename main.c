@@ -19,7 +19,7 @@ void xi_select_events(const int event) {
 
 int main(void) {
     if (!(d = XOpenDisplay(NULL))) {
-        printf("Couldn't open Display.\n");
+        fprintf(stderr, "Couldn't open Display.\n");
         return 1;
     }
     r = XDefaultRootWindow(d);
